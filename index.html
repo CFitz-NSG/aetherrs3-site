@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://runescape.wiki https://oldschool.runescape.wiki; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; connect-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore AetherRS3, a community-run RS3 world with restored encounters, custom companion progression and a fresh take on familiar adventures.">
+  <meta name="theme-color" content="#0a121b">
+  <title>AetherRS3 · Adventure on your terms</title>
+  <link rel="icon" type="image/webp" href="assets/mark.webp">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site-tools.css">
+  <script src="event-clock.js" defer></script>
+  <script src="event-display.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#top" aria-label="AetherRS3 home"><img src="assets/wordmark.webp" alt="AetherRS3" width="160" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="#world">The world</a>
+        <a href="updates.html">Updates</a>
+        <a href="#support">Supporter guide</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="community.html">Community</a>
+        <a href="vote.html">Vote</a>
+        <a href="music.html">Music</a>
+      </nav>
+      <a class="button button-small button-outline" href="#play">Play now <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art">
+        <img src="assets/prifddinas-gameplay.webp" alt="" width="1019" height="732" fetchpriority="high">
+      </div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="diamond" aria-hidden="true"></span> An RS3 restoration project</p>
+          <h1 id="hero-title">Adventure on<br><em>your terms.</em></h1>
+          <p class="hero-description">Take on familiar bosses, train a companion with its own skill tree, and explore a world built around the way you like to play.</p>
+          <div class="actions">
+            <a class="button button-gold" href="#play">Start playing <span aria-hidden="true">↗</span></a>
+            <a class="button button-dark" href="wiki.html">Explore the wiki <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-credit" aria-hidden="true"><span></span>Prifddinas · In-game screenshot</div>
+      </div>
+    </section>
+
+    <div class="event-strip"><div class="wrap"><div><span class="event-dot" aria-hidden="true"></span><span class="event-label">Current schedule</span><strong data-event-value="name">World events</strong></div><span class="event-status" data-event-value="weekendShort" data-weekend-status>Weekend Double XP: Loading</span><a href="events.html">Event tracker ↗</a></div></div>
+
+    <div class="quick-links" aria-label="Explore AetherRS3">
+      <div class="wrap quick-grid">
+        <a href="#encounters"><span class="quick-index">01</span><span><strong>Face the encounters</strong><small>Araxxor, Vorago and Rise of the Six</small></span><span class="quick-arrow" aria-hidden="true">↗</span></a>
+        <a href="#companions"><span class="quick-index">02</span><span><strong>Build a companion</strong><small>Perks, signatures and prestige</small></span><span class="quick-arrow" aria-hidden="true">↗</span></a>
+        <a href="#play"><span class="quick-index">03</span><span><strong>Find your footing</strong><small>Launcher, game modes and shortcuts</small></span><span class="quick-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <section class="wrap section world" id="world" aria-labelledby="world-title">
+      <div class="section-head">
+        <div><p class="eyebrow"><span class="diamond" aria-hidden="true"></span> The world</p><h2 id="world-title">Familiar places. New choices.</h2></div>
+        <p>Pick your difficulty, find your next destination in the Atlas, and build a character and companion that fit how you play.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature feature-main" id="encounters">
+          <img src="assets/vorago-gameplay.webp" alt="" width="1045" height="940" loading="lazy">
+          <div class="feature-copy">
+            <p class="eyebrow">Combat</p>
+            <h3>Fight the bosses you came back for.</h3>
+            <p>Take on Araxxor, Vorago, and the Barrows brothers in Rise of the Six.</p>
+            <a class="text-link" href="wiki.html?category=Boss+guides">Read the boss guides <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="feature feature-side" id="companions">
+          <a class="companion-shot" href="assets/companion-tree.webp" aria-label="Open the full companion skill tree screenshot">
+            <img src="assets/companion-tree.webp" alt="Chick’arra's companion skill tree with Gathering, Artisan and Explorer branches" width="1041" height="651" loading="lazy">
+          </a>
+          <div class="feature-copy">
+            <p class="eyebrow">Companions</p>
+            <h3>A pet with a build of its own.</h3>
+            <p>Train the pet following you, invest in a mix of perk branches, and prestige to unlock Ascension. Pets can follow alongside a Summoning familiar.</p>
+            <a class="text-link" href="wiki.html?guide=pet-training">Read the companion guide <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="field" id="field">
+        <div class="field-intro">
+          <p class="eyebrow">From the field</p>
+          <h3>A look inside AetherRS3</h3>
+        </div>
+        <div class="field-leads">
+          <figure>
+            <a href="assets/harmony-gameplay.webp" aria-label="Open the full Harmony Home screenshot">
+              <img src="assets/harmony-gameplay.webp" alt="Players and NPCs by the shoreline at Harmony Home, with the Area Loot and Slayer panels open" width="1536" height="844" loading="lazy">
+            </a>
+            <figcaption>Harmony Home <span>01</span></figcaption>
+          </figure>
+          <figure class="level-up">
+            <a href="assets/level-up-gameplay.webp" aria-label="Open the full Divination level-up screenshot">
+              <img src="assets/level-up-gameplay.webp" alt="A character gaining a Divination level amid blue wisps" width="751" height="675" loading="lazy">
+            </a>
+            <figcaption>Divination level-up <span>02</span></figcaption>
+          </figure>
+        </div>
+        <details class="field-gallery">
+          <summary>More gameplay screenshots <span class="expand" aria-hidden="true"></span></summary>
+          <div class="field-gallery-grid">
+            <figure><a href="assets/skilling-gameplay.webp" aria-label="Open the full Harmony skilling screenshot"><img src="assets/skilling-gameplay.webp" alt="A player gaining experience near the coastal garden at Harmony" width="777" height="476" loading="lazy"></a><figcaption>Skilling at Harmony</figcaption></figure>
+            <figure><a href="assets/workshop-gameplay.webp" aria-label="Open the full workshop screenshot"><img src="assets/workshop-gameplay.webp" alt="Characters in a workshop with a furnace, anvil and spinning wheel" width="1536" height="743" loading="lazy"></a><figcaption>Inside the workshop</figcaption></figure>
+            <figure><a href="assets/garden-gameplay.webp" aria-label="Open the full garden screenshot"><img src="assets/garden-gameplay.webp" alt="A player in a hedge garden beside a stone fountain" width="834" height="1030" loading="lazy"></a><figcaption>The garden</figcaption></figure>
+            <figure><a href="assets/companion-mastery.webp" aria-label="Open the full companion mastery screenshot"><img src="assets/companion-mastery.webp" alt="Bill at level 99 with a trained companion mastery branch" width="1040" height="648" loading="lazy"></a><figcaption>Companion mastery</figcaption></figure>
+            <figure><a href="assets/gnome-glider.webp" aria-label="Open the full Gnome Glider map screenshot"><img src="assets/gnome-glider.webp" alt="The Gnome Glider map with eight labelled destinations" width="872" height="593" loading="lazy"></a><figcaption>Gnome Glider map</figcaption></figure>
+            <figure><a href="assets/prifddinas-gameplay.webp" aria-label="Open the full Prifddinas screenshot"><img src="assets/prifddinas-gameplay.webp" alt="A player beside a circular dais beneath white arches in Prifddinas" width="1019" height="732" loading="lazy"></a><figcaption>Prifddinas</figcaption></figure>
+            <figure><a href="assets/araxxor-gameplay.webp" aria-label="Open the full Araxxor screenshot"><img src="assets/araxxor-gameplay.webp" alt="A character facing Araxxor beside flames in the Araxyte hive" width="640" height="354" loading="lazy"></a><figcaption>Araxxor</figcaption></figure>
+            <figure><a href="assets/vorago-gameplay.webp" aria-label="Open the full Vorago screenshot"><img src="assets/vorago-gameplay.webp" alt="A character standing before Vorago’s head in a rocky cavern" width="1045" height="940" loading="lazy"></a><figcaption>Vorago</figcaption></figure>
+            <figure><a href="assets/rots-gameplay.webp" aria-label="Open the full Rise of the Six screenshot"><img src="assets/rots-gameplay.webp" alt="Gameplay in the purple-lit Rise of the Six arena" width="640" height="354" loading="lazy"></a><figcaption>Rise of the Six</figcaption></figure>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="field-tools" id="field-tools" aria-labelledby="field-tools-title">
+      <div class="wrap section">
+        <div class="section-head">
+          <div><p class="eyebrow"><span class="diamond" aria-hidden="true"></span> Field tools</p><h2 id="field-tools-title">Plan your next adventure.</h2></div>
+          <p>Look up a drop, choose a training route, or find the first step of a quest before you head out.</p>
+        </div>
+        <nav class="field-tool-grid" aria-label="Player tools">
+          <a href="wiki.html?view=items"><span class="field-tool-category">Combat</span><strong>Find a drop</strong><span>Search for an item and see which monsters can drop it.</span><span class="field-tool-arrow" aria-hidden="true">↗</span></a>
+          <a href="wiki.html?view=skills"><span class="field-tool-category">Skilling</span><strong>Find a training route</strong><span>Browse skill guides and the matching Atlas destinations.</span><span class="field-tool-arrow" aria-hidden="true">↗</span></a>
+          <a href="wiki.html?view=quests"><span class="field-tool-category">Questing</span><strong>Start a restored quest</strong><span>Check requirements and follow the walkthrough.</span><span class="field-tool-arrow" aria-hidden="true">↗</span></a>
+          <a href="training.html#xp-calculator"><span class="field-tool-category">Calculator</span><strong>Work out your XP</strong><span>Estimate how many actions you need for your next level.</span><span class="field-tool-arrow" aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="play section" id="play" aria-labelledby="play-title">
+      <div class="wrap play-grid">
+        <div class="play-copy">
+          <p class="eyebrow"><span class="diamond" aria-hidden="true"></span> Getting started</p>
+          <h2 id="play-title">Your first steps.</h2>
+          <p>Install 64-bit Java 8 for Windows first. Then download and open the launcher JAR and select <strong>Update and play</strong>. Your first launch can take a little longer while the game loads its cache.</p>
+          <div class="actions">
+            <a class="button button-gold" aria-describedby="download-notice" href="https://github.com/CFitz-NSG/AetherRS3-Downloads/releases/download/vtreasure-atlas-20260922-1/AetherRS3-Launcher.jar">Download launcher (.jar) <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=254129_ee9438f370f14316bf0d13e23c26582b">Get Java 8 (Windows 64-bit) <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="download-notice" id="download-notice">AetherRS3 is an unofficial, independently operated private server. RuneScape and its original game assets and trademarks belong to Jagex Limited.</p>
+          <div class="play-modes">
+            <h3>Choose your difficulty</h3>
+            <ul class="difficulty-list" aria-label="Difficulty emblems">
+              <li><img src="assets/mode-easy.png" alt="" width="28" height="28"><span>Easy</span></li>
+              <li><img src="assets/mode-normal.png" alt="" width="28" height="28"><span>Normal</span></li>
+              <li><img src="assets/mode-hard.png" alt="" width="28" height="28"><span>Hard</span></li>
+              <li><img src="assets/mode-expert.png" alt="" width="28" height="28"><span>Expert</span></li>
+              <li><img src="assets/mode-extreme.png" alt="" width="28" height="28"><span>Extreme</span></li>
+            </ul>
+            <h3>Ironman account types</h3>
+            <ul class="ironman-list" aria-label="Ironman emblems">
+              <li><img src="assets/ironman.png" alt="" width="28" height="28"><span>Ironman</span></li>
+              <li><img src="assets/hardcore-ironman.png" alt="" width="28" height="28"><span>Hardcore Ironman</span></li>
+            </ul>
+            <p>Reclaim your Ironman starter kit with <code>;;ironkit</code>.</p>
+          </div>
+        </div>
+        <div class="play-reference">
+          <figure class="mode-shot">
+            <a href="assets/mode-selection.webp" aria-label="Open the full game mode selection screenshot">
+              <img src="assets/mode-selection.webp" alt="The in-game Choose Your Adventure screen with five difficulties and three account types" width="738" height="444" loading="lazy">
+            </a>
+            <figcaption>Choose your adventure in-game</figcaption>
+          </figure>
+          <div class="controls" id="controls">
+            <p class="eyebrow">Keep these handy</p>
+            <h3>Field shortcuts</h3>
+            <dl>
+              <div><dt><kbd>Ctrl</kbd> + <kbd>S</kbd></dt><dd>Open the companion skill tree</dd></div>
+              <div><dt><kbd>Ctrl</kbd> + <kbd>H</kbd></dt><dd>Travel to Harmony Home</dd></div>
+              <div><dt><kbd>T</kbd></dt><dd>Open the travel Atlas</dd></div>
+              <div><dt><code>;;loot</code></dt><dd>Open Area Loot. Press Space to collect visible drops.</dd></div>
+              <div><dt><code>;;commands</code></dt><dd>Browse your available commands</dd></div>
+              <div><dt><code>;;ref nsg</code></dt><dd>Enter the NSG referral code</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section updates" id="updates" aria-labelledby="updates-title">
+      <div class="section-head">
+        <div><p class="eyebrow"><span class="diamond" aria-hidden="true"></span> Patch notes</p><h2 id="updates-title">What’s new</h2></div>
+        <a class="text-link" href="updates.html">Browse the patch archive <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="update-list">
+        <details open>
+          <summary><time datetime="2026-11-06">Nov 6, 2026</time><span>Bank, pet &amp; quality-of-life fixes</span><span class="expand" aria-hidden="true"></span></summary>
+          <ul>
+            <li>Click or drag to deposit into your selected bank tab. Your tab organization survives reopening the bank.</li>
+            <li>Pets follow after a normal respawn and NPCs can walk past them.</li>
+            <li>Supported Slayer assignments have a teleport button. Bring an enchanted gem.</li>
+            <li>Action-bar food works by click or keybind, and Area Loot can reopen after death.</li>
+          </ul>
+          <div class="patch-shots">
+            <figure>
+              <a href="assets/slayer-tracker.webp" aria-label="Open the full Slayer tracker screenshot"><img src="assets/slayer-tracker.webp" alt="Slayer task tracker with a Teleport to task button" width="263" height="121" loading="lazy"></a>
+              <figcaption>Slayer tracker</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/area-loot.webp" aria-label="Open the full Area Loot screenshot"><img src="assets/area-loot.webp" alt="Area Loot showing nearby items, filters and the Loot All button" width="404" height="290" loading="lazy"></a>
+              <figcaption>Area Loot</figcaption>
+            </figure>
+          </div>
+        </details>
+        <details>
+          <summary><time datetime="2026-11-06">Nov 6, 2026</time><span>World &amp; quality-of-life update</span><span class="expand" aria-hidden="true"></span></summary>
+          <ul>
+            <li>Movable Area Loot groups drops, updates in combat, and supports filters and a block list.</li>
+            <li>Hold Shift and click a backpack item to drop it. Mode, donor, and staff badges can appear together in chat.</li>
+            <li>Weekend bonus XP, rotating global events, starter guidance, and Harmony Home restoration.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><time datetime="2026-11-05">Nov 5, 2026</time><span>Ironman starter kit &amp; supplies</span><span class="expand" aria-hidden="true"></span></summary>
+          <ul>
+            <li>Use <code>;;ironkit</code> for reclaimable level-one gear on eligible accounts.</li>
+            <li>Visit the Ironman supply shop at Home for basic gear and supplies.</li>
+            <li>The Home stall now supports up to ten attempts in a single interaction.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="support section" id="support" aria-labelledby="support-title">
+      <div class="wrap support-grid">
+        <div class="support-intro">
+          <p class="eyebrow"><span class="diamond" aria-hidden="true"></span> Supporter guide</p>
+          <h2 id="support-title">Life at the donor zone.</h2>
+          <p>Existing members can use <code>;;dz</code> and speak to the guide for supplies, a tour, and perks for their current rank.</p>
+          <a class="button button-outline" href="https://discord.gg/6TzCdUMRDE">Ask the team on Discord <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="rank-list">
+          <article>
+            <img src="assets/donor-1-flint.png" alt="" width="34" height="34">
+            <div><h3>Donor</h3><p>Zone access with bank chests, a supplies counter, Cavefish and Rocktail shoals, workshop services, and skilling shortcuts. Up to 150 red sandstone per cooldown.</p></div>
+          </article>
+          <article>
+            <img src="assets/donor-2-tide.png" alt="" width="34" height="34">
+            <div><h3>Extreme Donor</h3><p>Keep mining when a Shooting Star changes layers. Eligible bird’s nests go to your bank when there’s room. Up to 225 red sandstone per cooldown.</p></div>
+          </article>
+          <p class="rank-note">Workshop supplies use in-game coins. Fishing, crafting, and other activities keep their usual requirements.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a class="footer-brand" href="index.html"><img src="assets/mark.webp" alt="" width="32" height="38"><span>AetherRS3<small>Independent community project</small></span></a>
+      <nav aria-label="Footer navigation"><a href="help.html">Help</a><a href="index.html#play">Download</a><a href="privacy.html">Website Privacy</a><a href="https://discord.gg/6TzCdUMRDE">Discord <span aria-hidden="true">↗</span></a></nav>
+    </div>
+    <div class="wrap footer-legal"><p>AetherRS3 is an unofficial, independently operated private server. RuneScape and its original game assets and trademarks belong to Jagex Limited.</p></div>
+  </footer>
+</body>
+</html>

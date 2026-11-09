@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://runescape.wiki https://oldschool.runescape.wiki; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; connect-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore genuine AetherRS3 screenshots, patch notes and player support.">
+  <meta name="theme-color" content="#0c1720">
+  <title>Community & gallery · AetherRS3</title>
+  <link rel="icon" type="image/webp" href="assets/mark.webp">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="wiki.css">
+  <link rel="stylesheet" href="site-tools.css">
+  <script src="community.js" defer></script>
+  <script src="event-clock.js" defer></script>
+  <script src="session-plan.js" defer></script>
+</head>
+<body class="wiki-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html" aria-label="AetherRS3 home"><img src="assets/wordmark.webp" alt="AetherRS3" width="160" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#world">The world</a>
+        <a href="updates.html">Updates</a>
+        <a href="index.html#support">Supporter guide</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="community.html" aria-current="page">Community</a>
+        <a href="vote.html">Vote</a>
+        <a href="music.html">Music</a>
+      </nav>
+      <a class="button button-small button-outline" href="index.html#play">Play now <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  
+  <main class="wrap community-main wiki-main" id="main">
+    <section class="archive-hero community-hero"><img src="assets/harmony-gameplay.webp" alt="" fetchpriority="high">
+      <div class="hero-copy"><p class="eyebrow"><span class="diamond" aria-hidden="true"></span> Around Aether</p>
+      <h1>Good adventures.<br><em>Better together.</em></h1>
+      <p>Explore the world through real screenshots, catch up on changes, and find the people and guides that help you take the next step.</p>
+      <div class="actions"><a class="button button-gold" href="https://discord.gg/6TzCdUMRDE">Join Discord ↗</a><a class="button button-dark" href="wiki.html">Explore the wiki ↗</a></div></div>
+    </section>
+    <nav class="article-links help-jumps" aria-label="Community sections"><a href="#gallery">Gallery</a><a href="#session-planner">Plan a session</a><a href="updates.html">Game updates ↗</a><a href="help.html">Help and commands ↗</a></nav>
+    <section class="community-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="wiki-section-title"><h2 id="gallery-title">Aether in pictures</h2></div>
+      <p class="wiki-intro">See the places, encounters and interfaces that make up the world. Select a screenshot to open its full view.</p>
+      <div class="gallery-filter" aria-label="Gallery categories"><button type="button" data-gallery-filter="all" aria-pressed="true">All images</button><button type="button" data-gallery-filter="world" aria-pressed="false">The world</button><button type="button" data-gallery-filter="boss" aria-pressed="false">Encounters</button><button type="button" data-gallery-filter="interface" aria-pressed="false">Interfaces</button></div>
+      <div class="archive-gallery" id="archive-gallery"></div>
+    </section>
+    <section class="community-section" id="session-planner" aria-labelledby="session-title">
+      <div class="wiki-section-title"><h2 id="session-title">Plan a session</h2><a href="events.html">Current events ↗</a></div>
+      <p class="wiki-intro">Pick an activity and a time. Check the scheduled bonuses, then copy a plan to share with your group.</p>
+      <div class="session-grid">
+        <div class="session-card">
+          <label for="session-activity">Activity</label>
+          <select id="session-activity"><option value="training">Skilling session</option><option value="quests">Quest session</option><option value="vorago">Vorago</option><option value="araxxor">Araxxor</option><option value="rots">Rise of the Six</option><option value="companions">Companion training</option></select>
+          <label for="session-time">Start time <small id="session-zone"></small></label>
+          <input type="datetime-local" id="session-time" min="2020-01-01T00:00" max="2099-12-31T23:59" aria-describedby="session-time-note">
+          <p id="session-time-note">Choose the time in your browser's time zone.</p>
+          <div class="article-links"><a id="session-guide" href="wiki.html?view=skills">Open the activity guide ↗</a></div>
+          <ul id="session-prep"></ul>
+        </div>
+        <div class="session-card session-results">
+          <h3>Scheduled at your start time</h3>
+          <dl><div><dt>New York time</dt><dd id="session-new-york">—</dd></div><div><dt>Hourly event</dt><dd id="session-event">—</dd></div><div><dt>Weekend Double XP</dt><dd id="session-weekend">—</dd></div><div><dt>Player / pet XP</dt><dd id="session-xp">—</dd></div></dl>
+          <label for="session-summary">Shareable plan</label>
+          <textarea id="session-summary" readonly rows="6"></textarea>
+          <button class="button button-gold" id="session-copy" type="button">Copy session plan</button>
+          <p id="session-copy-status" role="status"></p>
+        </div>
+      </div>
+    </section>
+    <section class="community-section" id="field-notes"><div class="wiki-section-title"><h2>Field notes</h2><a href="updates.html">Patch notes ↗</a></div>
+      <div class="directory-grid">
+        <a class="directory-tile" href="wiki.html?guide=pet-training"><h3>Build a companion</h3><p>Individual pet XP, skill branches, signatures, hybrid builds and prestige.</p><small>COMPANIONS ↗</small></a>
+        <a class="directory-tile" href="wiki.html?guide=area-loot"><h3>Loot without leaving the fight</h3><p>Stacked drops, a live Nearby view, filters and your own block list.</p><small>QUALITY OF LIFE ↗</small></a>
+        <a class="directory-tile" href="wiki.html?guide=global-events"><h3>Plan around events</h3><p>Learn the weekend schedule, hourly bonuses and what stacks.</p><small>WORLD EVENTS ↗</small></a>
+        <a class="directory-tile" href="help.html"><h3>Help and commands</h3><p>Find shortcuts and copy verified commands or a report template.</p><small>PLAYER SUPPORT ↗</small></a>
+      </div>
+    </section>
+    <section class="community-section" id="community-support"><div class="wiki-section-title"><h2>Find your people</h2></div>
+      <div class="wiki-note">Join the existing AetherRS3 Discord to meet players, share screenshots, discuss builds and ask questions. Use the bug-report guide for an issue with a specific action or encounter.</div>
+      <div class="actions"><a class="button button-gold" href="https://discord.gg/6TzCdUMRDE">AetherRS3 Discord ↗</a><a class="button button-outline" href="help.html">Help and commands ↗</a><a class="button button-outline" href="vote.html">Vote for AetherRS3 ↗</a></div>
+    </section>
+    <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Screenshot viewer">
+      <div class="lightbox-top"><span>Genuine AetherRS3 gameplay</span><button type="button" data-gallery-close aria-label="Close screenshot">×</button></div>
+      <img id="lightbox-image" alt=""><div class="lightbox-bottom"><button type="button" data-gallery-prev aria-label="Previous screenshot">←</button><div><strong id="lightbox-title"></strong><small id="lightbox-caption"></small></div><button type="button" data-gallery-next aria-label="Next screenshot">→</button></div>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a class="footer-brand" href="index.html"><img src="assets/mark.webp" alt="" width="32" height="38"><span>AetherRS3<small>Independent community project</small></span></a>
+      <nav aria-label="Footer navigation"><a href="help.html">Help</a><a href="index.html#play">Download</a><a href="privacy.html">Website Privacy</a><a href="https://discord.gg/6TzCdUMRDE">Discord <span aria-hidden="true">↗</span></a></nav>
+    </div>
+    <div class="wrap footer-legal"><p>AetherRS3 is an unofficial, independently operated private server. RuneScape and its original game assets and trademarks belong to Jagex Limited.</p></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://runescape.wiki https://oldschool.runescape.wiki; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; connect-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="See the current AetherRS3 rotation, upcoming events and weekend double XP in New York time.">
+  <meta name="theme-color" content="#0c1720">
+  <title>World events · AetherRS3</title>
+  <link rel="icon" type="image/webp" href="assets/mark.webp">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="wiki.css">
+  <link rel="stylesheet" href="site-tools.css">
+  <script src="event-clock.js" defer></script>
+  <script src="event-display.js" defer></script>
+</head>
+<body class="wiki-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html" aria-label="AetherRS3 home"><img src="assets/wordmark.webp" alt="AetherRS3" width="160" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#world">The world</a>
+        <a href="updates.html">Updates</a>
+        <a href="index.html#support">Supporter guide</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="community.html">Community</a>
+        <a href="vote.html">Vote</a>
+        <a href="music.html">Music</a>
+      </nav>
+      <a class="button button-small button-outline" href="index.html#play">Play now <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  
+  <main class="wrap community-main wiki-main" id="main">
+    <section class="archive-hero event-hero"><img src="assets/level-up-gameplay.webp" alt="" fetchpriority="high">
+      <div class="hero-copy"><p class="eyebrow"><span class="diamond" aria-hidden="true"></span> The AetherRS3 schedule</p><h1>World events</h1><p>See the scheduled bonuses for now and the next six rotations. All times are shown in New York time.</p></div>
+    </section>
+    <div class="event-board" aria-label="Current event schedule">
+      <article class="event-card"><p class="article-category">Current hourly rotation</p><h2 data-event-value="name" aria-live="polite">Loading event schedule…</h2><p data-event-value="description"></p><div class="event-timing"><span>Next hour · <strong data-event-value="nextHour"></strong></span><strong data-event-value="hourCountdown" aria-hidden="true"></strong></div></article>
+      <article class="event-card"><p class="article-category">Weekend XP</p><h2 data-event-value="weekend" data-weekend-status aria-live="polite">Loading weekend schedule…</h2><p>Starts Friday at 12:01 AM and ends Sunday at 11:59 PM, New York time.</p><div class="event-timing"><span><strong data-event-value="weekendChange"></strong> · <strong data-event-value="nextWeekend"></strong></span><strong data-event-value="weekendCountdown" aria-hidden="true"></strong></div></article>
+    </div>
+    <div class="event-multipliers"><div><span>Scheduled player XP</span><strong data-event-value="playerXp">—</strong></div><div><span>Scheduled pet XP</span><strong data-event-value="petXp">—</strong></div></div>
+    <p class="wiki-note">This tracker follows the game's event clock using the current time. Use <kbd>;;events</kbd> in game to check the active bonuses on your world.</p>
+    <section id="upcoming-rotations" aria-labelledby="rotation-title">
+      <div class="wiki-section-title"><h2 id="rotation-title">Next six rotations</h2><a href="community.html#session-planner">Plan a session ↗</a></div>
+      <p class="wiki-intro">XP multipliers show the scheduled bonuses at the start of each slot. Any weekend Double XP change during that slot is listed with the event.</p>
+      <ol id="event-forecast" class="event-forecast" role="list"><li>Loading upcoming rotations…</li></ol>
+      <template id="event-forecast-row"><li>
+        <time class="forecast-time"></time>
+        <div><strong class="forecast-name"></strong><p class="forecast-change" hidden></p></div>
+        <div class="forecast-xp"><span class="forecast-player"></span><span class="forecast-pet"></span></div>
+      </li></template>
+    </section>
+    <div class="article-links"><a href="wiki.html?guide=global-events">Read the event guide ↗</a><a href="training.html">XP calculator ↗</a></div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a class="footer-brand" href="index.html"><img src="assets/mark.webp" alt="" width="32" height="38"><span>AetherRS3<small>Independent community project</small></span></a>
+      <nav aria-label="Footer navigation"><a href="help.html">Help</a><a href="index.html#play">Download</a><a href="privacy.html">Website Privacy</a><a href="https://discord.gg/6TzCdUMRDE">Discord <span aria-hidden="true">↗</span></a></nav>
+    </div>
+    <div class="wrap footer-legal"><p>AetherRS3 is an unofficial, independently operated private server. RuneScape and its original game assets and trademarks belong to Jagex Limited.</p></div>
+  </footer>
+</body>
+</html>

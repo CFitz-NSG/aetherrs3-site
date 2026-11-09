@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://runescape.wiki https://oldschool.runescape.wiki; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; connect-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Calculate AetherRS3 XP with actual difficulty rates, weekend XP, hourly events and the Well of Goodwill.">
+  <meta name="theme-color" content="#0c1720">
+  <title>Training and XP calculator · AetherRS3</title>
+  <link rel="icon" type="image/webp" href="assets/mark.webp">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="wiki.css">
+  <link rel="stylesheet" href="site-tools.css">
+  <script src="training-actions.js" defer></script>
+  <script src="event-clock.js" defer></script>
+  <script src="xp-calculator.js" defer></script>
+</head>
+<body class="wiki-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html" aria-label="AetherRS3 home"><img src="assets/wordmark.webp" alt="AetherRS3" width="160" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#world">The world</a>
+        <a href="updates.html">Updates</a>
+        <a href="index.html#support">Supporter guide</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="community.html">Community</a>
+        <a href="vote.html">Vote</a>
+        <a href="music.html">Music</a>
+      </nav>
+      <a class="button button-small button-outline" href="index.html#play">Play now <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  
+  <main class="wrap community-main wiki-main" id="main">
+    <section class="archive-hero community-hero"><img src="assets/skilling-gameplay.webp" alt="" fetchpriority="high">
+      <div class="hero-copy"><p class="eyebrow"><span class="diamond" aria-hidden="true"></span> AetherRS3 training tools</p><h1>Every action<br><em>adds up.</em></h1><p>Work out XP per action, the progress from a batch and how many actions your next level will take.</p><a class="hero-link" href="#xp-calculator">Open the calculator ↓</a></div>
+    </section>
+    <section id="xp-calculator" class="training-tool" aria-labelledby="xp-title">
+      <div class="wiki-section-title"><h2 id="xp-title">Player XP calculator</h2><a href="events.html">View current events ↗</a></div>
+      <div class="xp-layout">
+        <div class="xp-inputs">
+          <label for="xp-action">Training action</label><select id="xp-action" aria-describedby="xp-action-detail"><option value="">Enter your own base XP</option></select>
+          <p class="xp-action-detail" id="xp-action-detail" hidden></p>
+          <label for="xp-mode">Difficulty</label><select id="xp-mode"><option value="Easy">Easy · 50×</option><option value="Normal" selected>Normal · 25×</option><option value="Hard">Hard · 10×</option><option value="Expert">Expert · 5×</option><option value="Extreme">Extreme · 1×</option></select>
+          <label for="xp-base">Base XP per action</label><input id="xp-base" type="number" min="0.001" step="any" value="10">
+          <label for="xp-actions">Actions in the batch</label><input id="xp-actions" type="number" min="0" step="1" value="100" aria-describedby="xp-action-detail">
+          <label for="xp-start">Current skill XP</label><input id="xp-start" type="number" min="0" max="200000000" step="any" value="0">
+          <label for="xp-target-level">Target level</label><select id="xp-target-level"></select>
+          <fieldset class="xp-bonuses"><legend>Eligible bonuses</legend><label><input id="xp-schedule" type="checkbox" checked> Use the current event schedule</label><label><input id="xp-weekend" type="checkbox"> Weekend double XP</label><label><input id="xp-hourly" type="checkbox"> Hourly double player XP</label><label><input id="xp-well" type="checkbox"> Active Well of Goodwill · +25%</label></fieldset>
+        </div>
+        <div class="xp-results"><div><span>Applied multiplier</span><strong data-xp-result="multiplier">—</strong></div><div><span>XP per action</span><strong data-xp-result="perAction">—</strong></div><div><span>XP from this batch</span><strong data-xp-result="earned">—</strong></div><div><span>XP after the batch</span><strong data-xp-result="final">—</strong></div><div><span>Actions to target</span><strong data-xp-result="required">—</strong></div><p id="xp-feedback" role="status"></p></div>
+      </div>
+      <div class="wiki-note">Use base XP before difficulty and bonuses. This estimates eligible ordinary skill awards, using the selected mode, scheduled XP boosts and Well bonus. Activity-specific awards, charged bonus XP, outfits, auras and companion bonuses can follow additional rules. Some skills or activities have their own level or access caps.</div>
+    </section>
+    <div class="article-links"><a href="wiki.html?view=skills">Training guides ↗</a><a href="wiki.html?guide=game-modes">Difficulty and account guide ↗</a><a href="wiki.html?view=levels">Pet XP levels ↗</a></div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a class="footer-brand" href="index.html"><img src="assets/mark.webp" alt="" width="32" height="38"><span>AetherRS3<small>Independent community project</small></span></a>
+      <nav aria-label="Footer navigation"><a href="help.html">Help</a><a href="index.html#play">Download</a><a href="privacy.html">Website Privacy</a><a href="https://discord.gg/6TzCdUMRDE">Discord <span aria-hidden="true">↗</span></a></nav>
+    </div>
+    <div class="wrap footer-legal"><p>AetherRS3 is an unofficial, independently operated private server. RuneScape and its original game assets and trademarks belong to Jagex Limited.</p></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://runescape.wiki https://oldschool.runescape.wiki; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; connect-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find the AetherRS3 soundtrack, troubleshoot audio and suggest a YouTube track.">
+  <meta name="theme-color" content="#0c1720">
+  <title>Music and suggestions · AetherRS3</title>
+  <link rel="icon" type="image/webp" href="assets/mark.webp">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="wiki.css">
+  <link rel="stylesheet" href="site-tools.css">
+  <script src="music-suggestions.js" defer></script>
+</head>
+<body class="wiki-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="index.html" aria-label="AetherRS3 home"><img src="assets/wordmark.webp" alt="AetherRS3" width="160" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#world">The world</a>
+        <a href="updates.html">Updates</a>
+        <a href="index.html#support">Supporter guide</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="community.html">Community</a>
+        <a href="vote.html">Vote</a>
+        <a href="music.html" aria-current="page">Music</a>
+      </nav>
+      <a class="button button-small button-outline" href="index.html#play">Play now <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  
+  <main class="wrap community-main wiki-main" id="main">
+    <section class="archive-hero event-hero">
+      <div class="hero-copy"><p class="eyebrow"><span class="diamond" aria-hidden="true"></span> AetherRS3 soundtrack</p><h1>Music</h1>
+      <p>Find your in-game tracks, fix silent playback, or share a song you would like the team to consider.</p></div>
+    </section>
+    <div class="guide-grid two">
+      <article class="reference-card"><span class="ref-eyebrow">Listen</span><h2>Play a track</h2>
+      <p>Open the in-game Music Player, turn up Music in the audio settings and select an available track. Sound effects and music have separate controls.</p>
+      <a class="source-link" href="wiki.html?guide=music-audio">Read the soundtrack guide ↗</a></article>
+      <article class="reference-card"><span class="ref-eyebrow">Troubleshoot</span><h2>When music is silent</h2>
+      <p>Try a custom track and a normal game track, then check the Windows volume mixer for the game window. Launch through the current updater if only custom tracks are silent.</p>
+      <a class="source-link" href="wiki.html?guide=client-troubleshooting">Open client troubleshooting ↗</a></article>
+    </div>
+    <section class="community-section" id="suggest-track" aria-labelledby="suggest-track-title">
+      <div class="wiki-section-title"><h2 id="suggest-track-title">Suggest a track</h2></div>
+      <p class="wiki-intro">Paste a YouTube video link and prepare a suggestion to post in the AetherRS3 Discord. The website leaves the message in your hands. Suggestions are reviewed before anything is added to the game.</p>
+      <div class="session-grid">
+        <div class="session-card">
+          <label for="music-link">YouTube video link</label>
+          <input id="music-link" type="url" inputmode="url" maxlength="450" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off">
+          <label for="music-title">Track and artist <small>Optional</small></label>
+          <input id="music-title" type="text" maxlength="120" autocomplete="off">
+          <label for="music-context">Where would it fit? <small>Optional</small></label>
+          <textarea id="music-context" rows="3" maxlength="320" placeholder="A login track, boss fight, or a place in the world"></textarea>
+          <button class="button button-gold" type="button" id="prepare-music-suggestion">Prepare suggestion</button>
+        </div>
+        <div class="session-card">
+          <label for="music-draft">Your Discord message</label>
+          <textarea id="music-draft" readonly rows="7" placeholder="Your suggestion will appear here."></textarea>
+          <div class="actions"><button class="button button-outline" type="button" id="copy-music-suggestion" disabled>Copy suggestion</button>
+          <a class="text-link" href="https://discord.gg/6TzCdUMRDE">Open AetherRS3 Discord ↗</a></div>
+          <p id="music-suggestion-status" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <a class="footer-brand" href="index.html"><img src="assets/mark.webp" alt="" width="32" height="38"><span>AetherRS3<small>Independent community project</small></span></a>
+      <nav aria-label="Footer navigation"><a href="help.html">Help</a><a href="index.html#play">Download</a><a href="privacy.html">Website Privacy</a><a href="https://discord.gg/6TzCdUMRDE">Discord <span aria-hidden="true">↗</span></a></nav>
+    </div>
+    <div class="wrap footer-legal"><p>AetherRS3 is an unofficial, independently operated private server. RuneScape and its original game assets and trademarks belong to Jagex Limited.</p></div>
+  </footer>
+</body>
+</html>
