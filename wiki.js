@@ -57,6 +57,11 @@
     }
     return terms;
   });
+  for (const source of data.scriptedItemSources || []) {
+    let item = itemById.get(source.id);
+    if (!item) { item = { id:source.id, name:source.name, terms:normalize(source.name + " " + source.id), sourceCount:0, sources:[] }; itemById.set(source.id,item); }
+    (item.scriptedSources ||= []).push(source);
+  }
   const items = [...itemById.values()].sort((a, b) => a.name.localeCompare(b.name) || a.id - b.id);
   const searchable = [
     ...articles.map(article => ({ name: article.title, kind: article.category, href: guide(article.id), terms: normalize(article.title + " " + article.summary) })),
@@ -429,6 +434,7 @@
   }
 
   function coverCredit(key) {
+    if (art[key]?.kind === "screenshot") return "AetherRS3 gameplay · user-supplied " + esc(art[key].subject);
     return credit(key, "Wiki illustration · " + art[key]?.subject);
   }
 
@@ -482,7 +488,7 @@
     return `<a class="reference-card item-source-card" href="${path({ view: "items", item: item.id, ...(query ? { q: query } : {}) })}">
       ${artwork("item-" + item.id, "item-art") || '<span class="item-placeholder" aria-hidden="true">◇</span>'}
       <div><span class="ref-eyebrow">Item ${item.id}</span><h3>${esc(item.name)}</h3>
-      <span class="monster-meta">${number.format(item.sourceCount)} configured NPC ${item.sourceCount === 1 ? "ID" : "IDs"}</span></div></a>`;
+      <span class="monster-meta">${item.scriptedSources?.length ? "Scripted raid reward" : number.format(item.sourceCount) + " configured NPC " + (item.sourceCount === 1 ? "ID" : "IDs")}</span></div></a>`;
   }
 
   function itemDetail(item) {
@@ -491,17 +497,19 @@
     return `<section class="monster-detail item-detail" aria-label="Selected item drop sources">
       ${artwork(key, "item-art") || '<span class="item-placeholder" aria-hidden="true">◇</span>'}
       <p class="article-category">Item ${item.id} · Configured sources</p><h2>${esc(item.name)}</h2>
-      <p class="wiki-intro">${number.format(item.sourceCount)} NPC IDs · ${number.format(item.sources.length)} distinct tables</p>
+      <p class="wiki-intro">${item.scriptedSources?.length ? "Earned raid rewards · see party and personal odds below" : number.format(item.sourceCount) + " NPC IDs · " + number.format(item.sources.length) + " distinct tables"}</p>
       ${oracleWhip ? '<p class="monster-meta">Coloured abyssal whip variant. The standard abyssal whip is item #4151.</p>' : ""}
       ${credit(key) || '<p class="monster-meta">No verified artwork for this item.</p>'}
       <div class="article-links"><a href="${path({ view: "items" })}">Browse all items ↗</a></div>
       <div class="wiki-note">NPC variants with the same table are grouped. Quantities include the regular resource bonus. Read the pool to see whether odds are per kill, reward pile or chest draw.</div>
+      ${(item.scriptedSources || []).map(source => `<section class="item-source-group"><h3>${esc(source.label)}</h3><p>${esc(source.detail)}</p><a href="${guide(source.guide)}">Read the raid guide ↗</a></section>`).join("")}
       <div class="item-source-groups"></div><div class="wiki-pager">
         <button type="button" data-source-prev>Previous sources</button><span data-source-page role="status"></span><button type="button" data-source-next>Next sources</button>
       </div></section>`;
   }
 
   function showItemSources(item, element) {
+    if (!item.sources.length) { element.querySelector(".wiki-pager").hidden = true; return; }
     const groups = element.querySelector(".item-source-groups");
     const previous = element.querySelector("[data-source-prev]");
     const next = element.querySelector("[data-source-next]");
@@ -663,3 +671,4 @@
   render();
   scrollToSection();
 })();
+
