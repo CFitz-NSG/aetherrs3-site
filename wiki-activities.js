@@ -82,10 +82,10 @@
       summary: "Work out whether an issue starts in the launcher, the lobby, or after joining the world.",
       sections: [
         { title: "Launcher or cache loading", list: [
-          "Start with the launcher linked on this site and let Update and play finish. The Windows launcher uses 64-bit Java 8.",
+          "Beta access is by approval. Apply through our Discord; approved testers receive launcher and setup instructions from the team. The Windows launcher uses 64-bit Java 8.",
           "On a first visit to an area, wait for the client to finish loading before comparing movement or reconnect times.",
           "If the update fails, copy the displayed error and note your launcher version. Keep your saves and cache in place while diagnosing."
-        ], ordered: true, external: [["index.html#play", "Open the download instructions"]] },
+        ], ordered: true, external: [["https://discord.gg/6TzCdUMRDE", "Apply for beta tester on Discord"]] },
         { title: "Lobby, Play Now or disconnect", text: "Record the last stage that worked. If the lobby loads but Play Now returns you to login, report the exact message and whether a normal reconnect reproduces it. If movement alone is delayed, compare it with turning the camera while standing still." },
         { title: "Interface or keyboard issue", text: "Close large panels, leave the chat entry idle and try again. If Area Loot reports a client mismatch, relaunch through Update and play. Include the interface name, exact error, combat layout and the action immediately before it.",
           links: [["area-loot", "Area Loot guide"]], external: [["help.html#report", "Copy the bug report template"]] },
