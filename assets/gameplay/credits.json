@@ -1,0 +1,132 @@
+[
+  {
+    "src": "assets/gameplay/archive-zoryas-tome.png",
+    "alt": "Zorya’s tome in the Archive lobby in AetherRS3",
+    "caption": "Zorya’s tome in the Archive lobby",
+    "group": "Fractured Archive",
+    "width": 578,
+    "height": 568,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "dedceb6cc12af2a2929193d2b2302eb26be4db5c140a1b9417c035fa2b325332"
+  },
+  {
+    "src": "assets/gameplay/archive-ezekiel.png",
+    "alt": "Ezekiel encounter in AetherRS3",
+    "caption": "Ezekiel encounter",
+    "group": "Fractured Archive",
+    "width": 523,
+    "height": 1192,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "9829a61a6ca0139d19dfd7210406e2a8fdf09480f9b1ef38831e74b6a1ae622b"
+  },
+  {
+    "src": "assets/gameplay/archive-dreadnoth.png",
+    "alt": "Dreadnoth the Jellied in AetherRS3",
+    "caption": "Dreadnoth the Jellied",
+    "group": "Fractured Archive",
+    "width": 1414,
+    "height": 1329,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "d0385059155bcb3ceca31bd770b798ff94fa2487be181da5998122c2f05a2a49"
+  },
+  {
+    "src": "assets/gameplay/archive-bork-smorks.png",
+    "alt": "Bork and the Smorks in AetherRS3",
+    "caption": "Bork and the Smorks",
+    "group": "Fractured Archive",
+    "width": 987,
+    "height": 857,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "c238c9e3dc356938a6be6a02d02bd3a12c5dbf44501407e0ae05141d2104653d"
+  },
+  {
+    "src": "assets/gameplay/equipment-farm.png",
+    "alt": "Equipment at the farm in AetherRS3",
+    "caption": "Equipment at the farm",
+    "group": "Combat and equipment",
+    "width": 229,
+    "height": 342,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "adc5fe3ee119f8deec7343613d7d2dca0d4cd37dd73566c6455bfb4ebec2d6db"
+  },
+  {
+    "src": "assets/gameplay/ranged-training.png",
+    "alt": "Ranged training in AetherRS3",
+    "caption": "Ranged training",
+    "group": "Combat and equipment",
+    "width": 509,
+    "height": 390,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "69f3609aacfcf00573657b57f91fbd276f66e37bbb740985900ef0baf695ae7d"
+  },
+  {
+    "src": "assets/gameplay/cox-great-olm.png",
+    "alt": "Great Olm in AetherRS3",
+    "caption": "Great Olm",
+    "group": "Chambers of Xeric",
+    "width": 700,
+    "height": 608,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "6102d52a90a67473e3085f0ada5ae72b8409073b67603960b1f3943cb09860e1"
+  },
+  {
+    "src": "assets/gameplay/cox-olmlet.png",
+    "alt": "Olmlet at War’s Retreat in AetherRS3",
+    "caption": "Olmlet at War’s Retreat",
+    "group": "Chambers of Xeric",
+    "width": 668,
+    "height": 641,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "0f12b00729fb99b395c231c2adce0be016b43ba1c8867f40189210222a669fe7"
+  },
+  {
+    "src": "assets/gameplay/cox-vasa-nistirio.png",
+    "alt": "Vasa Nistirio in AetherRS3",
+    "caption": "Vasa Nistirio",
+    "group": "Chambers of Xeric",
+    "width": 832,
+    "height": 610,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "53c4e31794f3c4c30f2fb3a563b13a757cb2ef10a78b1ae685a832d6ebf2d1ab"
+  },
+  {
+    "src": "assets/gameplay/cox-tekton.png",
+    "alt": "Tekton in AetherRS3",
+    "caption": "Tekton",
+    "group": "Chambers of Xeric",
+    "width": 697,
+    "height": 616,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "290b12c792b3c234398382c8a4cbb9389fba616f57b9932b009bf2f6be633fb7"
+  },
+  {
+    "src": "assets/gameplay/equipment-showcase.png",
+    "alt": "Player equipment showcase in AetherRS3",
+    "caption": "Player equipment showcase",
+    "group": "Combat and equipment",
+    "width": 210,
+    "height": 354,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "105b98fd6057c82f2f55d357544ecd3c72ff636ce3115b7ae601aaa70748d998"
+  },
+  {
+    "src": "assets/gameplay/arch-glacor-gameplay.png",
+    "alt": "Arch-Glacor encounter in AetherRS3",
+    "caption": "Arch-Glacor encounter",
+    "group": "Combat and equipment",
+    "width": 1916,
+    "height": 2068,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "c532e94fd57054dd51e5b9e1aef237c651cc7535f0e3f851213f10013d4b13b4"
+  },
+  {
+    "src": "assets/gameplay/ghost-combat.png",
+    "alt": "Fighting ghosts in AetherRS3",
+    "caption": "Fighting ghosts",
+    "group": "Combat and equipment",
+    "width": 1078,
+    "height": 643,
+    "credit": "User-supplied AetherRS3 gameplay screenshot",
+    "sha256": "c8c4166fbf4003a70ed13a21f2a4ffa35bdaeeefb184b3c3f4dca6d311edc5fe"
+  }
+]

@@ -108,7 +108,7 @@
   ];
   const navigation = [
     ["Explore", [["Archive home", path()], ["All guides", path({ category: "all" })], ["Getting started", path({ category: "Getting started" })]]],
-    ["Combat & progression", [["Boss guides", path({ category: "Boss guides" })], ["Monsters & drops", path({ view: "monsters" })], ["Item drop sources", path({ view: "items" })], ["Companions", path({ category: "Companions" })], ["Pet signatures", path({ view: "pets" })], ["Talent compendium", path({ view: "talents" })], ["Ascension paths", path({ view: "ascensions" })], ["Pet XP levels", path({ view: "levels" })]]],
+    ["Combat & progression", [["Boss guides", path({ category: "Boss guides" })], ["Raids", path({ category: "Raids" })], ["Monsters & drops", path({ view: "monsters" })], ["Item drop sources", path({ view: "items" })], ["Companions", path({ category: "Companions" })], ["Pet signatures", path({ view: "pets" })], ["Talent compendium", path({ view: "talents" })], ["Ascension paths", path({ view: "ascensions" })], ["Pet XP levels", path({ view: "levels" })]]],
     ["Training & quests", [["Training guides", path({ view: "skills" })], ["Restored quests", path({ view: "quests" })]]],
     ["Around Aether", [["Minigame guides", path({ category: "Minigame guides" })], ["Quality of life", path({ category: "Quality of life" })], ["Event tracker", "events.html"], ["XP calculator", "training.html"], ["Help and commands", "help.html"], ["Music", "music.html"], ["Sources & credits", guide("about")]]]
   ];
@@ -285,6 +285,7 @@
         ${section.text ? `<p>${esc(section.text)}</p>` : ""}
         ${section.list ? `<${section.ordered ? "ol" : "ul"}>${section.list.map(item => `<li>${esc(item)}</li>`).join("")}</${section.ordered ? "ol" : "ul"}>` : ""}
         ${section.links ? `<div class="article-links">${section.links.map(([id, label]) => `<a href="${guide(id)}">${esc(label)} ↗</a>`).join("")}</div>` : ""}
+        ${section.photos?.length ? `<div class="gameplay-gallery">${section.photos.map(photo => `<figure><a href="${esc(photo.src)}" aria-label="Open full screenshot: ${esc(photo.caption)}"><img src="${esc(photo.src)}" alt="${esc(photo.alt)}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async"></a><figcaption>${esc(photo.caption)}<small>User-supplied AetherRS3 gameplay</small></figcaption></figure>`).join("")}</div>` : ""}
         ${section.external?.length ? `<div class="article-links">${section.external.map(([href, label]) => `<a href="${esc(href)}">${esc(label)} ↗</a>`).join("")}</div>` : ""}</section>`).join("")}</div>
         <nav class="article-toc" aria-label="On this page"><strong>On this page</strong>${sections.map(section => `<a href="#${esc(section.anchor)}">${esc(section.title)}</a>`).join("")}${article.reference ? '<a href="#wiki-reference">Reference</a>' : ""}${examples.length ? '<a href="#action-xp">Action XP examples</a>' : ""}${training ? '<a href="#atlas-routes">Atlas routes</a>' : ""}</nav></div>
       ${article.reference ? '<section id="wiki-reference" aria-label="Interactive reference"></section>' : ""}
@@ -419,7 +420,7 @@
 
   function artwork(key, cssClass, eager = false) {
     const image = art[key];
-    if (!image || !/^(assets\/wiki\/|https:\/\/(?:oldschool\.)?runescape\.wiki\/images\/)/.test(image.src)) return "";
+    if (!image || !/^(assets\/(?:wiki|gameplay)\/|https:\/\/(?:oldschool\.)?runescape\.wiki\/images\/)/.test(image.src)) return "";
     return `<img class="${cssClass}" src="${esc(image.src)}" alt="" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
   }
 
